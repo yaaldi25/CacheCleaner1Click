@@ -134,7 +134,7 @@ class MainActivity : Activity() {
 
     private fun openSystemStorage() {
         try {
-            startActivity(Intent(Settings.ACTION_MANAGE_STORAGE))
+            startActivity(Intent("android.os.storage.action.MANAGE_STORAGE"))
         } catch (_: Exception) {
             try {
                 startActivity(Intent(Settings.ACTION_APPLICATION_SETTINGS))
